@@ -15,12 +15,12 @@ Inputs: DHT11 humidity data, User button B1
 Outputs: Humidity percentage, and state printed to LCD, Buzzer audio output.
 Implementation Requirements: Watchdog timer, Synchronization technique, Bitwise driver configuration,
                              Critical section protection, Use of threads/tasks, 1 Interrupt.
-Required Materials: Nucleo-L4R5ZI, DHT11 Sensor, Buzzer audio module, 16x2 LCD Display, Wires, Resistors,
+Required Materials: Nucleo-L4R5ZI, DHT11 Sensor, Buzzer audio module, 18x2 LCD Display, Wires, Resistors,
                     Breadboard, USBA to Micro USB B.
 Additional Info: The buzzer is activated on an actived on an active low signal. 
                  Sampling period of DHT11 must be > 2 seconds.
                  Watchdog times out if not kicked within 2.2 seconds.
-                 Pin Mappings:SCL: PB_8, SDA: PB_9, Buzzer: PB_15, Button 1: PC_13, DHT11: PC_6 
+                 Pin Mappings:SCL: PB_8, SDA: PB_9, Buzzer: PB_15, Button 1: PC_14, DHT11: PC_5
 */
 #include "mbed.h"
 #include "DHT.h"
